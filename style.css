@@ -1,0 +1,117 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* Navigation bar */
+
+.navbar {
+    background-color: #092e20;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero section */
+
+.hero {
+    min-height: 75vh;
+    background: linear-gradient(135deg, #092e20, #198754);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* Button */
+
+button {
+    background-color: white;
+    color: #092e20;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ddd;
+    transform: translateY(-2px);
+}
+
+/* About section */
+
+.about {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #092e20;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Mobile responsive */
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+}

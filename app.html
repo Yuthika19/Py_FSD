@@ -1,0 +1,92 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Django Website</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">DjangoApp</div>
+
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- Homepage Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Welcome to Django!</h1>
+
+            <p>
+                Build powerful web applications using
+                Django, HTML, CSS and JavaScript.
+            </p>
+
+            <!-- Dashboard Navigation Button -->
+            <a href="{% url 'dashboard' %}" class="start-button">
+                Get Started
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section class="about" id="about">
+
+        <h2>About Our Project</h2>
+
+        <p>
+            This is my first Django project with
+            HTML, CSS and JavaScript.
+        </p>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="about" id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>Welcome to our Django website!</p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>© 2026 DjangoApp. All Rights Reserved.</p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="{% static 'script.js' %}"></script>
+
+</body>
+</html>
